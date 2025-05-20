@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Jogo da Velha</h1>
+
+  <div id="menu">
+    <button class="button" onclick="startGame('player')">2 Jogadores</button>
+    <button class="button" onclick="startGame('bot')">Contra o Computador</button>
+  </div>
+
+  <div id="game" style="display:none;">
+    <div id="timer">Tempo restante: 1:30</div>
+    <div id="board"></div>
+    <p id="status"></p>
+    <button class="button" onclick="pauseGame()">Voltar ao Lobby</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
